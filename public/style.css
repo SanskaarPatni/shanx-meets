@@ -1,3 +1,7 @@
+.main {
+    height: 100vh;
+    display: flex;
+}
 body{
     margin: 0;
     padding: 0;
@@ -26,7 +30,7 @@ video {
 }
 
 .main__right{
-float: 0.2;
+flex: 0.2;
 }
 
 .main__videos{
@@ -35,6 +39,7 @@ float: 0.2;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 40px;
 }
 
 .main__controls{
@@ -61,7 +66,10 @@ float: 0.2;
     cursor: pointer;
     min-width: 80px;
     padding: 8px 10px;
-
+}
+.main__controls__button:hover {
+    background-color: #343434;
+    border-radius: 5px;
 }
 
 .leave_meeting{
@@ -76,6 +84,7 @@ float: 0.2;
 }
 
 .main__header{
+    padding-top:5px ;
     color: #f5f5f5;
     text-align: center;
 }
